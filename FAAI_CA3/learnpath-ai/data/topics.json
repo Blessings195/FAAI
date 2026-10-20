@@ -1,0 +1,193 @@
+[
+ {
+  "id": "PY",
+  "name": "Python for Data",
+  "prerequisites": [],
+  "est_hours": 2.0,
+  "summary": "NumPy arrays and pandas DataFrames are the workhorses for loading, slicing and summarising data in Python.",
+  "key_points": [
+   "NumPy arrays support fast vectorised maths without loops",
+   "A pandas DataFrame is a table with labelled rows and columns",
+   "Boolean masks and groupby let you filter and summarise data"
+  ],
+  "analogy": "Think of a DataFrame as a spreadsheet you can program.",
+  "common_mistake": "Looping over rows when a vectorised operation would be shorter and much faster."
+ },
+ {
+  "id": "LA",
+  "name": "Linear Algebra Basics",
+  "prerequisites": [],
+  "est_hours": 3.0,
+  "summary": "Vectors and matrices represent data and transformations; dot products and matrix multiplication combine them.",
+  "key_points": [
+   "A vector is an ordered list of numbers; a matrix is a grid of numbers",
+   "The dot product multiplies matching entries and sums them",
+   "Matrix multiplication needs matching inner dimensions: (m x n)(n x p) gives m x p"
+  ],
+  "analogy": "A matrix is a machine that stretches, rotates or mixes the inputs you feed it.",
+  "common_mistake": "Multiplying matrices with incompatible shapes, or assuming A.B equals B.A."
+ },
+ {
+  "id": "CALC",
+  "name": "Calculus and Derivatives",
+  "prerequisites": [],
+  "est_hours": 3.0,
+  "summary": "A derivative measures how fast a function changes; the chain rule handles functions built from other functions.",
+  "key_points": [
+   "The derivative of f at x is the slope of the tangent line",
+   "Power rule: d/dx of x^n is n times x^(n-1)",
+   "Chain rule: d/dx f(g(x)) = f'(g(x)) times g'(x)"
+  ],
+  "analogy": "The derivative is the speedometer reading of a function at a single instant.",
+  "common_mistake": "Forgetting to multiply by the inner derivative when applying the chain rule."
+ },
+ {
+  "id": "PROB",
+  "name": "Probability Basics",
+  "prerequisites": [],
+  "est_hours": 3.0,
+  "summary": "Probability quantifies uncertainty; conditional probability and Bayes' rule update beliefs as evidence arrives.",
+  "key_points": [
+   "Probabilities lie between 0 and 1, and the outcomes of an experiment sum to 1",
+   "For independent events P(A and B) = P(A) times P(B)",
+   "Bayes' rule: P(A|B) = P(B|A) P(A) / P(B)"
+  ],
+  "analogy": "A probability is a degree of belief that gets revised each time you see new evidence.",
+  "common_mistake": "Confusing P(A|B) with P(B|A)."
+ },
+ {
+  "id": "PREP",
+  "name": "Data Preprocessing",
+  "prerequisites": [
+   "PY"
+  ],
+  "est_hours": 2.0,
+  "summary": "Raw data must be cleaned, encoded and scaled before a model can learn from it.",
+  "key_points": [
+   "Handle missing values by dropping or imputing them",
+   "Encode categories as numbers, for example one-hot encoding",
+   "Scale features so that large-valued columns do not dominate"
+  ],
+  "analogy": "Preprocessing is washing and chopping vegetables before you cook.",
+  "common_mistake": "Fitting the scaler on the full dataset, which leaks test information into training."
+ },
+ {
+  "id": "LINREG",
+  "name": "Linear Regression",
+  "prerequisites": [
+   "LA",
+   "CALC"
+  ],
+  "est_hours": 3.0,
+  "summary": "Linear regression fits a line (or hyperplane) that predicts a number by minimising the squared error.",
+  "key_points": [
+   "The prediction is y_hat = w.x + b",
+   "The loss is the mean squared error between predictions and targets",
+   "Weights can be found with the normal equation or with gradient descent"
+  ],
+  "analogy": "You are drawing the straight line that sits closest to all the points.",
+  "common_mistake": "Reading a high R-squared as proof of causation or that the model is correct."
+ },
+ {
+  "id": "GD",
+  "name": "Gradient Descent",
+  "prerequisites": [
+   "CALC",
+   "LINREG"
+  ],
+  "est_hours": 3.0,
+  "summary": "Gradient descent minimises a loss by repeatedly stepping opposite to the gradient.",
+  "key_points": [
+   "Update rule: w <- w - eta times the gradient of the loss",
+   "The learning rate eta controls the step size",
+   "Too large a rate diverges; too small a rate is slow"
+  ],
+  "analogy": "Walking downhill in fog: you feel the slope under your feet and step downhill.",
+  "common_mistake": "Using a learning rate so large that the loss bounces up instead of down."
+ },
+ {
+  "id": "LOGREG",
+  "name": "Logistic Regression",
+  "prerequisites": [
+   "LINREG",
+   "PROB"
+  ],
+  "est_hours": 3.0,
+  "summary": "Logistic regression predicts the probability of a class by passing a linear score through the sigmoid function.",
+  "key_points": [
+   "Sigmoid(z) = 1/(1+e^-z) maps any number into (0,1)",
+   "The decision threshold is usually 0.5 on the predicted probability",
+   "It is trained by minimising log loss (cross-entropy)"
+  ],
+  "analogy": "A linear score is squashed into a probability, like a dimmer switch between 0 and 1.",
+  "common_mistake": "Treating the output as a class label instead of a probability."
+ },
+ {
+  "id": "EVAL",
+  "name": "Model Evaluation",
+  "prerequisites": [
+   "LOGREG",
+   "PROB"
+  ],
+  "est_hours": 2.0,
+  "summary": "Evaluation measures how well a model generalises to unseen data using held-out splits and suitable metrics.",
+  "key_points": [
+   "Precision = TP/(TP+FP); recall = TP/(TP+FN)",
+   "Accuracy misleads on imbalanced classes",
+   "Cross-validation averages performance over several train/validation splits"
+  ],
+  "analogy": "Evaluation is the mock exam with questions you have not seen before.",
+  "common_mistake": "Reporting accuracy on the training set, or tuning on the test set."
+ },
+ {
+  "id": "REG",
+  "name": "Overfitting and Regularization",
+  "prerequisites": [
+   "LINREG",
+   "EVAL"
+  ],
+  "est_hours": 2.5,
+  "summary": "An overfit model memorises training noise; regularization penalises complexity to improve generalization.",
+  "key_points": [
+   "Overfitting: low training error but high validation error",
+   "L2 (ridge) adds lambda times the sum of squared weights; L1 (lasso) adds lambda times the sum of absolute weights and can zero weights",
+   "A larger lambda means stronger regularization and a simpler model"
+  ],
+  "analogy": "Regularization is a budget on how wiggly the curve is allowed to be.",
+  "common_mistake": "Setting lambda so high that the model underfits."
+ },
+ {
+  "id": "NN",
+  "name": "Neural Network Basics",
+  "prerequisites": [
+   "GD",
+   "LA"
+  ],
+  "est_hours": 3.0,
+  "summary": "A neural network stacks layers of weighted sums followed by non-linear activations.",
+  "key_points": [
+   "A neuron computes an activation of (w.x + b)",
+   "Non-linear activations such as ReLU let the network model non-linear patterns",
+   "Layers are matrix multiplications, so shapes must line up"
+  ],
+  "analogy": "Each layer re-describes the data in a form that is easier for the next layer to separate.",
+  "common_mistake": "Stacking layers without non-linear activations, which collapses to one linear layer."
+ },
+ {
+  "id": "BP",
+  "name": "Backpropagation",
+  "prerequisites": [
+   "NN",
+   "CALC"
+  ],
+  "est_hours": 3.5,
+  "summary": "Backpropagation applies the chain rule layer by layer to compute the gradient of the loss with respect to every weight.",
+  "key_points": [
+   "A forward pass computes the outputs and the loss",
+   "A backward pass multiplies local derivatives from the output back to each weight",
+   "The resulting gradients feed a gradient descent update"
+  ],
+  "analogy": "It is like passing blame backwards: each layer is told how much it contributed to the final error.",
+  "common_mistake": "Forgetting to keep the forward-pass values that the backward pass needs."
+ }
+]

@@ -1,0 +1,10 @@
+streamlit>=1.50
+pandas>=2.0
+tabulate>=0.9
+langgraph>=0.6
+langchain>=0.3
+pydantic>=2.0
+python-dotenv>=1.0
+# Optional model back-ends (mock mode needs neither):
+# langchain-ollama      # free local models: install Ollama, then `ollama pull llama3.1`
+# langchain-anthropic   # Anthropic API (set ANTHROPIC_API_KEY in a .env file)

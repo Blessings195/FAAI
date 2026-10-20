@@ -1,0 +1,842 @@
+[
+ {
+  "id": "PY-1",
+  "topic": "PY",
+  "difficulty": 1,
+  "text": "Which library provides fast n-dimensional arrays with vectorised operations?",
+  "options": [
+   "Requests",
+   "Matplotlib",
+   "Flask",
+   "NumPy"
+  ],
+  "answer": 3,
+  "explanation": "NumPy arrays support vectorised operations implemented in compiled code."
+ },
+ {
+  "id": "PY-2",
+  "topic": "PY",
+  "difficulty": 1,
+  "text": "In pandas, what is a DataFrame?",
+  "options": [
+   "A type of neural network",
+   "A two-dimensional labelled table of data",
+   "A single column of numbers only",
+   "A plotting window"
+  ],
+  "answer": 1,
+  "explanation": "A DataFrame is a 2D table with labelled rows and columns."
+ },
+ {
+  "id": "PY-3",
+  "topic": "PY",
+  "difficulty": 2,
+  "text": "What does df[df['age'] > 30] return?",
+  "options": [
+   "Only the rows where age is greater than 30",
+   "A boolean Series only",
+   "All rows, with age incremented by 30",
+   "The column named age"
+  ],
+  "answer": 0,
+  "explanation": "A boolean mask inside the brackets selects the rows where the condition is True."
+ },
+ {
+  "id": "PY-4",
+  "topic": "PY",
+  "difficulty": 2,
+  "text": "Which call gives the average of column 'score' for each 'class' in df?",
+  "options": [
+   "df.groupby('class')['score'].mean()",
+   "df.mean('class','score')",
+   "df.score.groupby.mean('class')",
+   "df.sort_values('class').mean"
+  ],
+  "answer": 0,
+  "explanation": "groupby splits the data by class, then mean aggregates score within each group."
+ },
+ {
+  "id": "PY-5",
+  "topic": "PY",
+  "difficulty": 3,
+  "text": "For a NumPy array a with shape (3, 4), what is the shape of a.sum(axis=0)?",
+  "options": [
+   "(12,)",
+   "(3, 4)",
+   "(3,)",
+   "(4,)"
+  ],
+  "answer": 3,
+  "explanation": "Summing over axis 0 collapses the rows and leaves one value per column: shape (4,)."
+ },
+ {
+  "id": "LA-1",
+  "topic": "LA",
+  "difficulty": 1,
+  "text": "What is the dot product of [1, 2, 3] and [4, 5, 6]?",
+  "options": [
+   "21",
+   "15",
+   "27",
+   "32"
+  ],
+  "answer": 3,
+  "explanation": "1*4 + 2*5 + 3*6 = 4 + 10 + 18 = 32."
+ },
+ {
+  "id": "LA-2",
+  "topic": "LA",
+  "difficulty": 1,
+  "text": "A matrix with 3 rows and 2 columns has shape:",
+  "options": [
+   "2 x 3",
+   "3 x 2",
+   "3 x 3",
+   "6 x 1"
+  ],
+  "answer": 1,
+  "explanation": "Shape is written rows x columns, so 3 x 2."
+ },
+ {
+  "id": "LA-3",
+  "topic": "LA",
+  "difficulty": 2,
+  "text": "A is 2x3 and B is 3x4. What is the shape of A.B?",
+  "options": [
+   "2 x 3",
+   "3 x 3",
+   "2 x 4",
+   "4 x 2"
+  ],
+  "answer": 2,
+  "explanation": "The inner dimensions (3 and 3) match; the result has the outer dimensions 2 x 4."
+ },
+ {
+  "id": "LA-4",
+  "topic": "LA",
+  "difficulty": 2,
+  "text": "Which statement about matrix multiplication is true in general?",
+  "options": [
+   "A.B is not always equal to B.A",
+   "It is defined for any two matrices",
+   "It multiplies matching entries only",
+   "A.B always equals B.A"
+  ],
+  "answer": 0,
+  "explanation": "Matrix multiplication is not commutative, and shapes must be compatible."
+ },
+ {
+  "id": "LA-5",
+  "topic": "LA",
+  "difficulty": 3,
+  "text": "If A is 2x3, which product is defined?",
+  "options": [
+   "A times A",
+   "The transpose of A times the transpose of A",
+   "A times A times A",
+   "The transpose of A times A (3 x 3)"
+  ],
+  "answer": 3,
+  "explanation": "A-transpose is 3x2, so (3x2)(2x3) works and gives 3x3. The other products have mismatched inner dimensions."
+ },
+ {
+  "id": "CALC-1",
+  "topic": "CALC",
+  "difficulty": 1,
+  "text": "What is the derivative of f(x) = x^2?",
+  "options": [
+   "x^2",
+   "x",
+   "2x",
+   "2"
+  ],
+  "answer": 2,
+  "explanation": "By the power rule, d/dx x^2 = 2x."
+ },
+ {
+  "id": "CALC-2",
+  "topic": "CALC",
+  "difficulty": 1,
+  "text": "The derivative of a function at a point gives:",
+  "options": [
+   "The average of the function",
+   "The maximum value of the function",
+   "The area under the curve",
+   "The slope of the tangent line at that point"
+  ],
+  "answer": 3,
+  "explanation": "The derivative is the instantaneous rate of change, i.e. the tangent slope."
+ },
+ {
+  "id": "CALC-3",
+  "topic": "CALC",
+  "difficulty": 2,
+  "text": "What is d/dx of 3x^4?",
+  "options": [
+   "4x^3",
+   "3x^3",
+   "12x^4",
+   "12x^3"
+  ],
+  "answer": 3,
+  "explanation": "Power rule: 3 * 4 * x^3 = 12x^3."
+ },
+ {
+  "id": "CALC-4",
+  "topic": "CALC",
+  "difficulty": 2,
+  "text": "Using the chain rule, what is d/dx of (2x + 1)^3?",
+  "options": [
+   "3(2x)^2",
+   "6(2x + 1)^2",
+   "2(2x + 1)^3",
+   "3(2x + 1)^2"
+  ],
+  "answer": 1,
+  "explanation": "Outer derivative 3(2x+1)^2 times inner derivative 2 gives 6(2x+1)^2."
+ },
+ {
+  "id": "CALC-5",
+  "topic": "CALC",
+  "difficulty": 3,
+  "text": "If L = (wx - y)^2, what is dL/dw?",
+  "options": [
+   "2wx",
+   "(wx - y) * x",
+   "2(wx - y) * x",
+   "2(wx - y)"
+  ],
+  "answer": 2,
+  "explanation": "Chain rule: outer derivative 2(wx - y) times the inner derivative x."
+ },
+ {
+  "id": "PROB-1",
+  "topic": "PROB",
+  "difficulty": 1,
+  "text": "A fair six-sided die is rolled. What is P(rolling an even number)?",
+  "options": [
+   "1/2",
+   "2/3",
+   "1/3",
+   "1/6"
+  ],
+  "answer": 0,
+  "explanation": "Three of the six outcomes (2, 4, 6) are even."
+ },
+ {
+  "id": "PROB-2",
+  "topic": "PROB",
+  "difficulty": 1,
+  "text": "Which value cannot be a probability?",
+  "options": [
+   "1",
+   "0.5",
+   "1.2",
+   "0"
+  ],
+  "answer": 2,
+  "explanation": "Probabilities must lie between 0 and 1."
+ },
+ {
+  "id": "PROB-3",
+  "topic": "PROB",
+  "difficulty": 2,
+  "text": "Two independent events have P(A) = 0.5 and P(B) = 0.4. What is P(A and B)?",
+  "options": [
+   "0.1",
+   "0.45",
+   "0.2",
+   "0.9"
+  ],
+  "answer": 2,
+  "explanation": "For independent events multiply: 0.5 * 0.4 = 0.2."
+ },
+ {
+  "id": "PROB-4",
+  "topic": "PROB",
+  "difficulty": 2,
+  "text": "What does P(A|B) mean?",
+  "options": [
+   "The probability that A and B are independent",
+   "The probability of A given that B has occurred",
+   "The probability of A and B together",
+   "The probability of B given A"
+  ],
+  "answer": 1,
+  "explanation": "The vertical bar reads 'given'."
+ },
+ {
+  "id": "PROB-5",
+  "topic": "PROB",
+  "difficulty": 3,
+  "text": "A disease affects 1% of people. A test detects it 90% of the time when present and gives a false positive 9% of the time when absent. Roughly what is P(disease | positive test)?",
+  "options": [
+   "About 90%",
+   "About 9%",
+   "About 1%",
+   "About 50%"
+  ],
+  "answer": 1,
+  "explanation": "Bayes: 0.009 / (0.009 + 0.0891) is about 0.09. Most positives come from the large healthy group."
+ },
+ {
+  "id": "PREP-1",
+  "topic": "PREP",
+  "difficulty": 1,
+  "text": "Why do we scale features before training many models?",
+  "options": [
+   "To remove the target column",
+   "So that features with large ranges do not dominate",
+   "To increase the number of rows",
+   "To make the data categorical"
+  ],
+  "answer": 1,
+  "explanation": "Scaling puts features on comparable ranges."
+ },
+ {
+  "id": "PREP-2",
+  "topic": "PREP",
+  "difficulty": 1,
+  "text": "What is one-hot encoding used for?",
+  "options": [
+   "Representing a category as binary indicator columns",
+   "Removing outliers",
+   "Filling missing values",
+   "Scaling numbers to [0, 1]"
+  ],
+  "answer": 0,
+  "explanation": "Each category gets its own 0/1 column."
+ },
+ {
+  "id": "PREP-3",
+  "topic": "PREP",
+  "difficulty": 2,
+  "text": "A numeric column has 5% missing values. Which is a common simple fix?",
+  "options": [
+   "Replace them with the string 'NA' and train anyway",
+   "Multiply the column by zero",
+   "Delete the whole column always",
+   "Impute with the column median or mean"
+  ],
+  "answer": 3,
+  "explanation": "Median or mean imputation keeps the rows and the column."
+ },
+ {
+  "id": "PREP-4",
+  "topic": "PREP",
+  "difficulty": 2,
+  "text": "Min-max scaling maps values to which range by default?",
+  "options": [
+   "Mean 0 and variance 1",
+   "-1 to 0",
+   "0 to 1",
+   "0 to 100"
+  ],
+  "answer": 2,
+  "explanation": "Min-max scaling rescales to [0, 1]; mean 0 and variance 1 is standardisation."
+ },
+ {
+  "id": "PREP-5",
+  "topic": "PREP",
+  "difficulty": 3,
+  "text": "Why should a scaler be fitted on the training set only?",
+  "options": [
+   "Because test data cannot be scaled",
+   "To avoid leaking information from the test set into training",
+   "Because scalers only work on small data",
+   "To make training slower"
+  ],
+  "answer": 1,
+  "explanation": "Fitting on all data lets test statistics influence training, which inflates results."
+ },
+ {
+  "id": "LINREG-1",
+  "topic": "LINREG",
+  "difficulty": 1,
+  "text": "Linear regression predicts:",
+  "options": [
+   "Only a yes/no label",
+   "An image",
+   "A cluster id",
+   "A continuous number"
+  ],
+  "answer": 3,
+  "explanation": "Regression predicts numeric values."
+ },
+ {
+  "id": "LINREG-2",
+  "topic": "LINREG",
+  "difficulty": 1,
+  "text": "In y_hat = w.x + b, what is b?",
+  "options": [
+   "The loss",
+   "The learning rate",
+   "The bias (intercept)",
+   "The feature vector"
+  ],
+  "answer": 2,
+  "explanation": "b shifts the prediction up or down independent of x."
+ },
+ {
+  "id": "LINREG-3",
+  "topic": "LINREG",
+  "difficulty": 2,
+  "text": "Which loss does ordinary linear regression minimise?",
+  "options": [
+   "Hinge loss",
+   "Accuracy",
+   "Mean squared error",
+   "Cross-entropy"
+  ],
+  "answer": 2,
+  "explanation": "Least squares minimises the mean squared error."
+ },
+ {
+  "id": "LINREG-4",
+  "topic": "LINREG",
+  "difficulty": 2,
+  "text": "With y = 2x + 1, what is the prediction for x = 3?",
+  "options": [
+   "5",
+   "9",
+   "7",
+   "6"
+  ],
+  "answer": 2,
+  "explanation": "2*3 + 1 = 7."
+ },
+ {
+  "id": "LINREG-5",
+  "topic": "LINREG",
+  "difficulty": 3,
+  "text": "Which closed-form expression solves linear regression (the normal equation)?",
+  "options": [
+   "w = X y",
+   "w = X-transpose + y",
+   "w = (X-transpose X)^-1 X-transpose y",
+   "w = (X X-transpose) y"
+  ],
+  "answer": 2,
+  "explanation": "Setting the gradient of the squared error to zero gives the normal equation."
+ },
+ {
+  "id": "GD-1",
+  "topic": "GD",
+  "difficulty": 1,
+  "text": "Gradient descent moves the parameters:",
+  "options": [
+   "In the direction of the gradient",
+   "Randomly",
+   "In the direction opposite to the gradient",
+   "Toward larger loss"
+  ],
+  "answer": 2,
+  "explanation": "The negative gradient is the direction of steepest decrease."
+ },
+ {
+  "id": "GD-2",
+  "topic": "GD",
+  "difficulty": 1,
+  "text": "What does the learning rate control?",
+  "options": [
+   "The size of each update step",
+   "The amount of training data",
+   "The number of features",
+   "The activation function"
+  ],
+  "answer": 0,
+  "explanation": "The step is the learning rate times the gradient."
+ },
+ {
+  "id": "GD-3",
+  "topic": "GD",
+  "difficulty": 2,
+  "text": "The loss increases and oscillates wildly during training. The most likely cause is:",
+  "options": [
+   "A learning rate that is too small",
+   "Using a bias term",
+   "A learning rate that is too large",
+   "Too few features"
+  ],
+  "answer": 2,
+  "explanation": "Overly large steps overshoot the minimum and can diverge."
+ },
+ {
+  "id": "GD-4",
+  "topic": "GD",
+  "difficulty": 2,
+  "text": "With w = 4, gradient = 2 and learning rate 0.5, what is w after one update?",
+  "options": [
+   "3.5",
+   "4",
+   "5",
+   "3"
+  ],
+  "answer": 3,
+  "explanation": "w_new = 4 - 0.5 * 2 = 3."
+ },
+ {
+  "id": "GD-5",
+  "topic": "GD",
+  "difficulty": 3,
+  "text": "Compared with batch gradient descent, stochastic gradient descent (SGD):",
+  "options": [
+   "Uses the whole dataset for each step",
+   "Updates using one example (or a small batch) at a time, giving noisier but cheaper steps",
+   "Always converges in fewer iterations",
+   "Does not use gradients"
+  ],
+  "answer": 1,
+  "explanation": "SGD trades smooth steps for cheap, frequent updates."
+ },
+ {
+  "id": "LOGREG-1",
+  "topic": "LOGREG",
+  "difficulty": 1,
+  "text": "What does logistic regression output?",
+  "options": [
+   "A cluster centre",
+   "A derivative",
+   "A probability between 0 and 1",
+   "Any real number"
+  ],
+  "answer": 2,
+  "explanation": "The sigmoid maps the score into (0, 1)."
+ },
+ {
+  "id": "LOGREG-2",
+  "topic": "LOGREG",
+  "difficulty": 1,
+  "text": "What is sigmoid(0)?",
+  "options": [
+   "0.5",
+   "-1",
+   "0",
+   "1"
+  ],
+  "answer": 0,
+  "explanation": "1 / (1 + e^0) = 1/2."
+ },
+ {
+  "id": "LOGREG-3",
+  "topic": "LOGREG",
+  "difficulty": 2,
+  "text": "Which loss is used to train logistic regression?",
+  "options": [
+   "Log loss (cross-entropy)",
+   "Squared hinge loss only",
+   "Number of misclassified points",
+   "Absolute error"
+  ],
+  "answer": 0,
+  "explanation": "Maximum likelihood for a Bernoulli output gives log loss."
+ },
+ {
+  "id": "LOGREG-4",
+  "topic": "LOGREG",
+  "difficulty": 2,
+  "text": "With a 0.5 threshold, a predicted probability of 0.72 is classified as:",
+  "options": [
+   "Undecided",
+   "The positive class",
+   "An outlier",
+   "The negative class"
+  ],
+  "answer": 1,
+  "explanation": "0.72 is above 0.5."
+ },
+ {
+  "id": "LOGREG-5",
+  "topic": "LOGREG",
+  "difficulty": 3,
+  "text": "As the linear score z becomes very large and positive, sigmoid(z) approaches:",
+  "options": [
+   "Infinity",
+   "0.5",
+   "0",
+   "1"
+  ],
+  "answer": 3,
+  "explanation": "e^-z tends to 0, so 1/(1 + e^-z) tends to 1."
+ },
+ {
+  "id": "EVAL-1",
+  "topic": "EVAL",
+  "difficulty": 1,
+  "text": "Why do we keep a separate test set?",
+  "options": [
+   "To remove noise",
+   "To train the model faster",
+   "To estimate performance on unseen data",
+   "To increase the training accuracy"
+  ],
+  "answer": 2,
+  "explanation": "A held-out set gives an honest estimate of generalisation."
+ },
+ {
+  "id": "EVAL-2",
+  "topic": "EVAL",
+  "difficulty": 1,
+  "text": "Precision is defined as:",
+  "options": [
+   "TN / (TN + FP)",
+   "(TP + TN) / total",
+   "TP / (TP + FP)",
+   "TP / (TP + FN)"
+  ],
+  "answer": 2,
+  "explanation": "Of everything predicted positive, how much was truly positive."
+ },
+ {
+  "id": "EVAL-3",
+  "topic": "EVAL",
+  "difficulty": 2,
+  "text": "A model has 95% accuracy on data where 95% of examples are negative, but it predicts 'negative' every time. What does this show?",
+  "options": [
+   "Precision is 100%",
+   "The model is excellent",
+   "Recall is 100%",
+   "Accuracy can be misleading on imbalanced data"
+  ],
+  "answer": 3,
+  "explanation": "It never finds a positive, so recall is 0 despite high accuracy."
+ },
+ {
+  "id": "EVAL-4",
+  "topic": "EVAL",
+  "difficulty": 2,
+  "text": "Recall measures:",
+  "options": [
+   "The fraction of actual positives that the model finds",
+   "Overall accuracy",
+   "The fraction of predicted positives that are correct",
+   "The fraction of negatives found"
+  ],
+  "answer": 0,
+  "explanation": "Recall = TP / (TP + FN)."
+ },
+ {
+  "id": "EVAL-5",
+  "topic": "EVAL",
+  "difficulty": 3,
+  "text": "In 5-fold cross-validation, how many times is the model trained?",
+  "options": [
+   "5, each time on a different 4/5 of the data",
+   "1, on all data",
+   "10",
+   "5, always on the same split"
+  ],
+  "answer": 0,
+  "explanation": "Each fold takes a turn as the validation set while the other four train."
+ },
+ {
+  "id": "REG-1",
+  "topic": "REG",
+  "difficulty": 1,
+  "text": "Overfitting means the model:",
+  "options": [
+   "Has too few parameters",
+   "Performs poorly on training data",
+   "Performs equally on all data",
+   "Fits training data very well but performs poorly on new data"
+  ],
+  "answer": 3,
+  "explanation": "It has memorised noise in the training set."
+ },
+ {
+  "id": "REG-2",
+  "topic": "REG",
+  "difficulty": 1,
+  "text": "What is the purpose of regularization?",
+  "options": [
+   "To increase the learning rate",
+   "To make training slower",
+   "To reduce overfitting by penalising model complexity",
+   "To add more data"
+  ],
+  "answer": 2,
+  "explanation": "Penalties discourage overly complex fits."
+ },
+ {
+  "id": "REG-3",
+  "topic": "REG",
+  "difficulty": 2,
+  "text": "L2 regularization adds which term to the loss?",
+  "options": [
+   "lambda times the sum of absolute weights",
+   "lambda times the number of samples",
+   "lambda times the sum of squared weights",
+   "lambda times the sum of cubed weights"
+  ],
+  "answer": 2,
+  "explanation": "L2 penalises the squared magnitude of the weights."
+ },
+ {
+  "id": "REG-4",
+  "topic": "REG",
+  "difficulty": 2,
+  "text": "Which regularizer can drive some weights exactly to zero?",
+  "options": [
+   "L1 (lasso)",
+   "L2 (ridge)",
+   "Neither",
+   "Both identically"
+  ],
+  "answer": 0,
+  "explanation": "The L1 penalty produces sparse weights."
+ },
+ {
+  "id": "REG-5",
+  "topic": "REG",
+  "difficulty": 3,
+  "text": "Training error is 1% and validation error is 25%. What is the best first step?",
+  "options": [
+   "Increase the model size",
+   "Add regularization or get more data",
+   "Remove the validation set",
+   "Train for many more epochs"
+  ],
+  "answer": 1,
+  "explanation": "A big train/validation gap signals overfitting."
+ },
+ {
+  "id": "NN-1",
+  "topic": "NN",
+  "difficulty": 1,
+  "text": "What does a single neuron compute?",
+  "options": [
+   "A weighted sum of inputs plus a bias, passed through an activation",
+   "The median of the inputs",
+   "The derivative of the inputs",
+   "Only the sum of inputs"
+  ],
+  "answer": 0,
+  "explanation": "output = activation(w.x + b)."
+ },
+ {
+  "id": "NN-2",
+  "topic": "NN",
+  "difficulty": 1,
+  "text": "Why do networks need non-linear activation functions?",
+  "options": [
+   "To normalise the labels",
+   "To make training deterministic",
+   "To reduce the number of weights",
+   "Without them the stacked layers collapse into one linear map"
+  ],
+  "answer": 3,
+  "explanation": "A composition of linear maps is still linear."
+ },
+ {
+  "id": "NN-3",
+  "topic": "NN",
+  "difficulty": 2,
+  "text": "ReLU(x) equals:",
+  "options": [
+   "1/(1 + e^-x)",
+   "max(0, x)",
+   "x^2",
+   "min(0, x)"
+  ],
+  "answer": 1,
+  "explanation": "ReLU keeps positive values and zeroes out negatives."
+ },
+ {
+  "id": "NN-4",
+  "topic": "NN",
+  "difficulty": 2,
+  "text": "A layer maps 4 inputs to 3 outputs (output = x.W with x of shape 1x4). What is the shape of W?",
+  "options": [
+   "1 x 3",
+   "3 x 4",
+   "4 x 3",
+   "4 x 4"
+  ],
+  "answer": 2,
+  "explanation": "(1x4)(4x3) gives 1x3."
+ },
+ {
+  "id": "NN-5",
+  "topic": "NN",
+  "difficulty": 3,
+  "text": "Which output activation suits multi-class classification with exactly one class per example?",
+  "options": [
+   "Linear",
+   "Tanh",
+   "ReLU",
+   "Softmax"
+  ],
+  "answer": 3,
+  "explanation": "Softmax turns scores into probabilities that sum to 1."
+ },
+ {
+  "id": "BP-1",
+  "topic": "BP",
+  "difficulty": 1,
+  "text": "Backpropagation is used to compute:",
+  "options": [
+   "Gradients of the loss with respect to the weights",
+   "The learning rate",
+   "The activation functions",
+   "The training data labels"
+  ],
+  "answer": 0,
+  "explanation": "Those gradients drive the weight updates."
+ },
+ {
+  "id": "BP-2",
+  "topic": "BP",
+  "difficulty": 1,
+  "text": "Which calculus rule is central to backpropagation?",
+  "options": [
+   "The quotient rule only",
+   "The chain rule",
+   "The product rule only",
+   "L'Hopital's rule"
+  ],
+  "answer": 1,
+  "explanation": "Gradients are propagated by chaining local derivatives."
+ },
+ {
+  "id": "BP-3",
+  "topic": "BP",
+  "difficulty": 2,
+  "text": "In what order does the backward pass visit the layers?",
+  "options": [
+   "From the output layer back toward the input layer",
+   "Randomly",
+   "Only the first layer",
+   "From input to output"
+  ],
+  "answer": 0,
+  "explanation": "Each layer needs the gradient coming from the layer after it."
+ },
+ {
+  "id": "BP-4",
+  "topic": "BP",
+  "difficulty": 2,
+  "text": "Why must forward-pass activations be kept for the backward pass?",
+  "options": [
+   "They set the learning rate",
+   "The local derivatives depend on them",
+   "They are needed to shuffle data",
+   "They are the labels"
+  ],
+  "answer": 1,
+  "explanation": "Derivatives such as sigmoid'(z) are computed from stored values."
+ },
+ {
+  "id": "BP-5",
+  "topic": "BP",
+  "difficulty": 3,
+  "text": "For one neuron y = sigmoid(w x) and loss L = (y - t)^2, which expression is dL/dw?",
+  "options": [
+   "(y - t) * sigmoid'(wx)",
+   "2(y - t) * x",
+   "2(y - t) * sigmoid'(wx) * x",
+   "2(y - t) * sigmoid(wx)"
+  ],
+  "answer": 2,
+  "explanation": "Chain rule: dL/dy times dy/dz times dz/dw."
+ }
+]

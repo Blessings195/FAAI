@@ -1,0 +1,386 @@
+[
+ {
+  "id": "RES-PY-1",
+  "topic": "PY",
+  "title": "Python for Data: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-PY-2",
+  "topic": "PY",
+  "title": "Python for Data: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-PY-3",
+  "topic": "PY",
+  "title": "Python for Data: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-PY-4",
+  "topic": "PY",
+  "title": "Python for Data: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ },
+ {
+  "id": "RES-LA-1",
+  "topic": "LA",
+  "title": "Linear Algebra Basics: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-LA-2",
+  "topic": "LA",
+  "title": "Linear Algebra Basics: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-LA-3",
+  "topic": "LA",
+  "title": "Linear Algebra Basics: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-LA-4",
+  "topic": "LA",
+  "title": "Linear Algebra Basics: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ },
+ {
+  "id": "RES-CALC-1",
+  "topic": "CALC",
+  "title": "Calculus and Derivatives: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-CALC-2",
+  "topic": "CALC",
+  "title": "Calculus and Derivatives: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-CALC-3",
+  "topic": "CALC",
+  "title": "Calculus and Derivatives: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-CALC-4",
+  "topic": "CALC",
+  "title": "Calculus and Derivatives: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ },
+ {
+  "id": "RES-PROB-1",
+  "topic": "PROB",
+  "title": "Probability Basics: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-PROB-2",
+  "topic": "PROB",
+  "title": "Probability Basics: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-PROB-3",
+  "topic": "PROB",
+  "title": "Probability Basics: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-PROB-4",
+  "topic": "PROB",
+  "title": "Probability Basics: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ },
+ {
+  "id": "RES-PREP-1",
+  "topic": "PREP",
+  "title": "Data Preprocessing: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-PREP-2",
+  "topic": "PREP",
+  "title": "Data Preprocessing: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-PREP-3",
+  "topic": "PREP",
+  "title": "Data Preprocessing: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-PREP-4",
+  "topic": "PREP",
+  "title": "Data Preprocessing: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ },
+ {
+  "id": "RES-LINREG-1",
+  "topic": "LINREG",
+  "title": "Linear Regression: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-LINREG-2",
+  "topic": "LINREG",
+  "title": "Linear Regression: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-LINREG-3",
+  "topic": "LINREG",
+  "title": "Linear Regression: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-LINREG-4",
+  "topic": "LINREG",
+  "title": "Linear Regression: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ },
+ {
+  "id": "RES-GD-1",
+  "topic": "GD",
+  "title": "Gradient Descent: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-GD-2",
+  "topic": "GD",
+  "title": "Gradient Descent: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-GD-3",
+  "topic": "GD",
+  "title": "Gradient Descent: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-GD-4",
+  "topic": "GD",
+  "title": "Gradient Descent: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ },
+ {
+  "id": "RES-LOGREG-1",
+  "topic": "LOGREG",
+  "title": "Logistic Regression: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-LOGREG-2",
+  "topic": "LOGREG",
+  "title": "Logistic Regression: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-LOGREG-3",
+  "topic": "LOGREG",
+  "title": "Logistic Regression: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-LOGREG-4",
+  "topic": "LOGREG",
+  "title": "Logistic Regression: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ },
+ {
+  "id": "RES-EVAL-1",
+  "topic": "EVAL",
+  "title": "Model Evaluation: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-EVAL-2",
+  "topic": "EVAL",
+  "title": "Model Evaluation: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-EVAL-3",
+  "topic": "EVAL",
+  "title": "Model Evaluation: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-EVAL-4",
+  "topic": "EVAL",
+  "title": "Model Evaluation: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ },
+ {
+  "id": "RES-REG-1",
+  "topic": "REG",
+  "title": "Overfitting and Regularization: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-REG-2",
+  "topic": "REG",
+  "title": "Overfitting and Regularization: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-REG-3",
+  "topic": "REG",
+  "title": "Overfitting and Regularization: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-REG-4",
+  "topic": "REG",
+  "title": "Overfitting and Regularization: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ },
+ {
+  "id": "RES-NN-1",
+  "topic": "NN",
+  "title": "Neural Network Basics: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-NN-2",
+  "topic": "NN",
+  "title": "Neural Network Basics: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-NN-3",
+  "topic": "NN",
+  "title": "Neural Network Basics: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-NN-4",
+  "topic": "NN",
+  "title": "Neural Network Basics: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ },
+ {
+  "id": "RES-BP-1",
+  "topic": "BP",
+  "title": "Backpropagation: a visual introduction",
+  "type": "video",
+  "level": "beginner",
+  "minutes": 20
+ },
+ {
+  "id": "RES-BP-2",
+  "topic": "BP",
+  "title": "Backpropagation: worked examples",
+  "type": "article",
+  "level": "beginner",
+  "minutes": 15
+ },
+ {
+  "id": "RES-BP-3",
+  "topic": "BP",
+  "title": "Backpropagation: practice problem set",
+  "type": "exercise",
+  "level": "intermediate",
+  "minutes": 30
+ },
+ {
+  "id": "RES-BP-4",
+  "topic": "BP",
+  "title": "Backpropagation: going deeper",
+  "type": "article",
+  "level": "intermediate",
+  "minutes": 25
+ }
+]

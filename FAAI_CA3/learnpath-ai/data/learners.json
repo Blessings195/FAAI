@@ -1,0 +1,222 @@
+[
+ {
+  "id": "L001",
+  "name": "Ananya Rao",
+  "level": "intermediate",
+  "default_goal": "I want to understand backpropagation in 10 days, 1.5 hours a day",
+  "history": [
+   {
+    "topic": "PY",
+    "score": 9,
+    "max": 10
+   },
+   {
+    "topic": "PREP",
+    "score": 8,
+    "max": 10
+   },
+   {
+    "topic": "LA",
+    "score": 6,
+    "max": 10
+   },
+   {
+    "topic": "CALC",
+    "score": 3,
+    "max": 10
+   },
+   {
+    "topic": "PROB",
+    "score": 7,
+    "max": 10
+   },
+   {
+    "topic": "LINREG",
+    "score": 5,
+    "max": 10
+   },
+   {
+    "topic": "GD",
+    "score": 3,
+    "max": 10
+   },
+   {
+    "topic": "NN",
+    "score": 4,
+    "max": 10
+   }
+  ],
+  "sim": {
+   "default_gain": [
+    0.3,
+    0.2
+   ],
+   "overrides": {
+    "GD": [
+     0.0,
+     0.3
+    ]
+   }
+  }
+ },
+ {
+  "id": "L002",
+  "name": "Rahul Mehta",
+  "level": "advanced",
+  "default_goal": "Master model evaluation and regularization in 5 days, 1 hour a day",
+  "history": [
+   {
+    "topic": "PY",
+    "score": 10,
+    "max": 10
+   },
+   {
+    "topic": "PREP",
+    "score": 9,
+    "max": 10
+   },
+   {
+    "topic": "LA",
+    "score": 8,
+    "max": 10
+   },
+   {
+    "topic": "CALC",
+    "score": 7,
+    "max": 10
+   },
+   {
+    "topic": "PROB",
+    "score": 8,
+    "max": 10
+   },
+   {
+    "topic": "LINREG",
+    "score": 8,
+    "max": 10
+   },
+   {
+    "topic": "LOGREG",
+    "score": 7,
+    "max": 10
+   },
+   {
+    "topic": "EVAL",
+    "score": 4,
+    "max": 10
+   },
+   {
+    "topic": "REG",
+    "score": 3,
+    "max": 10
+   }
+  ],
+  "sim": {
+   "default_gain": [
+    0.3,
+    0.2
+   ],
+   "overrides": {}
+  }
+ },
+ {
+  "id": "L003",
+  "name": "Alice Daniels",
+  "level": "beginner",
+  "default_goal": "I want to learn linear regression in 4 days, 1 hour a day",
+  "history": [
+   {
+    "topic": "PY",
+    "score": 5,
+    "max": 10
+   },
+   {
+    "topic": "LA",
+    "score": 3,
+    "max": 10
+   },
+   {
+    "topic": "CALC",
+    "score": 2,
+    "max": 10
+   },
+   {
+    "topic": "PROB",
+    "score": 4,
+    "max": 10
+   }
+  ],
+  "sim": {
+   "default_gain": [
+    0.3,
+    0.2
+   ],
+   "overrides": {
+    "CALC": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "id": "L004",
+  "name": "Karan Shah",
+  "level": "advanced",
+  "default_goal": "I want to master neural networks in 3 days, 1 hour a day",
+  "history": [
+   {
+    "topic": "PY",
+    "score": 10,
+    "max": 10
+   },
+   {
+    "topic": "PREP",
+    "score": 9,
+    "max": 10
+   },
+   {
+    "topic": "LA",
+    "score": 9,
+    "max": 10
+   },
+   {
+    "topic": "CALC",
+    "score": 8,
+    "max": 10
+   },
+   {
+    "topic": "PROB",
+    "score": 8,
+    "max": 10
+   },
+   {
+    "topic": "LINREG",
+    "score": 9,
+    "max": 10
+   },
+   {
+    "topic": "GD",
+    "score": 8,
+    "max": 10
+   },
+   {
+    "topic": "NN",
+    "score": 7,
+    "max": 10
+   }
+  ],
+  "sim": {
+   "default_gain": [
+    0.3,
+    0.2
+   ],
+   "overrides": {
+    "NN": [
+     0.1,
+     0.2
+    ]
+   }
+  }
+ }
+]
